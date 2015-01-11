@@ -12,6 +12,6 @@ data$Date_and_Time <- strptime(data$Date_and_Time,format="%d/%m/%Y %H:%M:%S")
 plot(data$Date_and_Time, data$Global_active_power,ylab="Global Active Power (kilowatts)",type = "l",xlab="")
 
 # Once I have checked that the plot is correct, write it into a png file
-pngFile <- "data/plot2.png"
+pngFile <- "plot2.png"
 dev.copy(png, file = pngFile,  bg = "white")
 dev.off()
