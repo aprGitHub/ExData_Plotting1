@@ -55,7 +55,11 @@ As a result, you will get the file `household_power_consumption.subset.csv` in t
 
 * You may find it useful to convert the Date and Time variables to
 Date/Time classes in R using the `strptime()` and `as.Date()`
-functions.
+functions. 
+```{r}
+data$Date_and_Time <- paste(data$Date, data$Time)
+data$Date_and_Time <- strptime(data$Date_and_Time,format="%d/%m/%Y %H:%M:%S")
+```
 
 * Note that in this dataset missing values are coded as `?`.
 
