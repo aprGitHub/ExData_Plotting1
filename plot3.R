@@ -19,7 +19,7 @@ lines(data$Date_and_Time,data$Sub_metering_3,col="blue",ylab="Energy sub meeting
 legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=c(1,1,1),lwd=c(2.5,2.5),col=c("black","red","blue"),cex=.6)
 
 # Having doublechecked that the plot is correct, write it into a png file
-pngFile <- "data/plot3.png"
+pngFile <- "plot3.png"
 dev.copy(png, file = pngFile,  bg = "white")
 dev.off()
 
