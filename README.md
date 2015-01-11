@@ -35,10 +35,6 @@ web site</a>:
 
 ## Loading the data
 
-
-
-
-
 When loading the dataset into R, please consider the following:
 
 * The dataset has 2,075,259 rows and 9 columns. First
@@ -49,7 +45,10 @@ memory (most modern computers should be fine).
 * We will only be using data from the dates 2007-02-01 and
 2007-02-02. One alternative is to read the data from just those dates
 rather than reading in the entire dataset and subsetting to those
-dates.
+dates. Nevertheless, the alternative implemented in this project makes use of the OS. It is the grep command that sub-sets the file for you before loading it. <span style="color: red"> Important: </span> Before going ahead, please, carry out the following two tasks: 
+1. Place the data file `household_power_consumption.txt` within the folder `data`. 
+2. Run the script `subsetData.R`
+As a result, you will get the file `household_power_consumption.subset.csv` in the `data` folder. This is, indeed, the subset used by all the remaining scripts.
 
 * You may find it useful to convert the Date and Time variables to
 Date/Time classes in R using the `strptime()` and `as.Date()`
