@@ -46,9 +46,11 @@ memory (most modern computers should be fine).
 2007-02-02. One alternative is to read the data from just those dates
 rather than reading in the entire dataset and subsetting to those
 dates. Nevertheless, the alternative implemented in this project makes use of the OS. It is the grep command that sub-sets the file for you before loading it.  <font color="red"> <b>Important:<b> </font> Before going ahead, please, carry out the following two tasks: 
-´´´
+<div class="warning">
   - 1. Place the data file `household_power_consumption.txt` within the folder `data`. 
   - 2. Run the script `subsetData.R`
+</div>
+  
 As a result, you will get the file `household_power_consumption.subset.csv` in the `data` folder. This is, indeed, the subset used by all the remaining scripts.
 ´´´
 
