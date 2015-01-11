@@ -27,7 +27,7 @@ legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=c(1,
 plot(data$Date_and_Time,data$Global_reactive_power, xlab="datetime", ylab="Global_reactive_power", type = "l")
 
 # Having doublechecked that the plot is correct, write it into a png file
-pngFile <- "data/plot4.png"
+pngFile <- "plot4.png"
 dev.copy(png, file = pngFile,  bg = "white")
 dev.off()
 
